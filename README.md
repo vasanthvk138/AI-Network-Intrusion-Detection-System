@@ -84,3 +84,42 @@ AI-Network-Intrusion-Detection-System/
 ├── init_db.py
 ├── requirements.txt
 └── README.md
+## 📸 Application Screenshots
+
+### 🏠 1. Home Page
+
+The main interface allows the user to start network monitoring and access the SOC dashboard.
+
+![AI Intrusion Detection Home](screenshots/home.png)
+
+---
+
+### 🔍 2. Monitoring Started
+
+This page confirms that network monitoring has started and displays the monitoring scope.
+
+![Monitoring Started](screenshots/monitoring.png)
+
+---
+
+### 📊 3. SOC Dashboard
+
+The SOC dashboard provides an overview of network activity, including total logs, top attackers, attack types, and detected threats.
+
+![SOC Dashboard](screenshots/dashboard.png)
+
+---
+
+### 📈 4. Attack Distribution
+
+The dashboard visualizes detected traffic categories including BENIGN, BruteForce, DDoS, and PortScan.
+
+![Attack Distribution](screenshots/attack-distribution.png)
+
+---
+
+### 🌐 5. Live Traffic Logs
+
+The live traffic section displays IP addresses, detected attack types, and timestamps for security monitoring.
+
+![Live Traffic Logs](screenshots/live-traffic.png)
