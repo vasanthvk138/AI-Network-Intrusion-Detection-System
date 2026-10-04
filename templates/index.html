@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI IDS - Home</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI',sans-serif;
+        }
+
+        body{
+            height:100vh;
+            background:linear-gradient(135deg,#020617,#0f172a,#1e293b);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            overflow:hidden;
+            color:white;
+        }
+
+        .background{
+            position:absolute;
+            width:100%;
+            height:100%;
+            overflow:hidden;
+            z-index:-1;
+        }
+
+        .circle{
+            position:absolute;
+            border-radius:50%;
+            background:rgba(56,189,248,0.08);
+            animation:float 12s infinite ease-in-out;
+        }
+
+        .circle:nth-child(1){
+            width:300px;
+            height:300px;
+            top:-100px;
+            left:-100px;
+        }
+
+        .circle:nth-child(2){
+            width:250px;
+            height:250px;
+            bottom:-80px;
+            right:-80px;
+            animation-delay:2s;
+        }
+
+        .circle:nth-child(3){
+            width:180px;
+            height:180px;
+            top:60%;
+            left:15%;
+            animation-delay:4s;
+        }
+
+        @keyframes float{
+            0%{
+                transform:translateY(0px);
+            }
+
+            50%{
+                transform:translateY(-30px);
+            }
+
+            100%{
+                transform:translateY(0px);
+            }
+        }
+
+        .container{
+            width:420px;
+            padding:40px;
+            border-radius:20px;
+            background:rgba(15,23,42,0.75);
+            backdrop-filter:blur(15px);
+            box-shadow:0 0 40px rgba(0,0,0,0.6);
+            text-align:center;
+            animation:fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn{
+            from{
+                opacity:0;
+                transform:translateY(20px);
+            }
+
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+
+        .icon{
+            font-size:55px;
+            margin-bottom:10px;
+        }
+
+        h1{
+            font-size:32px;
+            color:#38bdf8;
+            margin-bottom:10px;
+        }
+
+        p{
+            color:#94a3b8;
+            margin-bottom:30px;
+            font-size:15px;
+        }
+
+        input{
+            width:100%;
+            padding:14px;
+            border:none;
+            border-radius:10px;
+            outline:none;
+            background:#0f172a;
+            color:white;
+            margin-bottom:18px;
+            font-size:15px;
+            border:1px solid #334155;
+            transition:0.3s;
+        }
+
+        input:focus{
+            border-color:#38bdf8;
+            box-shadow:0 0 10px rgba(56,189,248,0.4);
+        }
+
+        input::placeholder{
+            color:#64748b;
+        }
+
+        button{
+            width:100%;
+            padding:14px;
+            border:none;
+            border-radius:10px;
+            background:linear-gradient(90deg,#22c55e,#16a34a);
+            color:white;
+            font-size:16px;
+            font-weight:bold;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        button:hover{
+            transform:translateY(-2px);
+            box-shadow:0 0 20px rgba(34,197,94,0.5);
+        }
+
+        .dashboard-link{
+            margin-top:25px;
+        }
+
+        .dashboard-link a{
+            text-decoration:none;
+            color:#facc15;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .dashboard-link a:hover{
+            color:#fde047;
+        }
+
+        .footer{
+            margin-top:25px;
+            font-size:12px;
+            color:#64748b;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <div class="container">
+
+        <div class="icon">🛡️</div>
+
+        <h1>AI Intrusion Detection</h1>
+
+        <p>
+            Real-time AI Powered Network Threat Detection & Monitoring System
+        </p>
+
+        <form action="/start" method="post">
+
+            <input 
+                type="text" 
+                name="ip" 
+                placeholder="Enter Target IP (Optional)"
+            >
+
+            <button type="submit">
+                🚀 Start Monitoring
+            </button>
+
+        </form>
+
+        <div class="dashboard-link">
+            <a href="/dashboard">
+                📊 Open SOC Dashboard
+            </a>
+        </div>
+
+        <div class="footer">
+            AI IDS • Cybersecurity Monitoring System
+        </div>
+
+    </div>
+
+</body>
+</html>

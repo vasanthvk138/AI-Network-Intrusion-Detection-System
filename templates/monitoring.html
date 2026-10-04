@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Monitoring</title>
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0f172a;
+    font-family:Arial;
+    color:white;
+}
+
+.box{
+    background:#1e293b;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    width:400px;
+}
+
+h1{
+    color:#22c55e;
+}
+
+a{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 20px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>🛡 Monitoring Started</h1>
+
+<p>
+Monitoring:
+<b>{{ ip if ip else "FULL NETWORK" }}</b>
+</p>
+
+<a href="/dashboard">
+📊 Open Dashboard
+</a>
+
+</div>
+
+</body>
+</html>
