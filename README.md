@@ -84,6 +84,8 @@ AI-Network-Intrusion-Detection-System/
 ├── init_db.py
 ├── requirements.txt
 └── README.md
+```
+
 ## 📸 Application Screenshots
 
 ### 🏠 1. Home Page
